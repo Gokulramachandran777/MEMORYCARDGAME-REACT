@@ -1,4 +1,4 @@
-#root {
+ #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -7,26 +7,21 @@
 .home-page h1{
 font-size: 30px;
 }
-.game-completed {
-background-color: rgba(40, 44, 31, 0.112);
-position: absolute;
-inset: 0;
-display: grid;
-place-items: center;
-}
+
 .container{
   display: grid;
 grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));
 grid-auto-rows: 150px;
-gap: 20px;
 justify-content: center;
+gap: 20px;
+
 
 
 }
 
 .flip-card {
   background-color: transparent;
- 
+  perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -47,6 +42,7 @@ justify-content: center;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .flip-card-front {
@@ -64,4 +60,55 @@ justify-content: center;
   font-size: 50px;
   border-radius: 4px;
 }
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #7e769c 1%,
+    #560cab 19%,
+    #ec0c0c 77%,
+    #f2ea16 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
 
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.title {
+  display:flex;
+  inset: 0;
+  text-align: center;
+  place-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  text-shadow: -4px 3px 0 #41385a, -14px 7px 0 #31344a4f;
+
+}
+game-completed {
+  background-color: rgba(0, 0, 0, 0.764);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.game-completed h1 {
+  font-size: 60px;
+}
+
+/*  
+
+
+ */

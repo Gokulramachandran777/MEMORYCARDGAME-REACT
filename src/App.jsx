@@ -122,7 +122,7 @@ function App() {
   };
 
   return (
-    <main>
+    <main >
       <h1 className="animate-charcter"> Memory Card Game </h1>
       <div className="title">
         <h1> Level - {level} </h1>
